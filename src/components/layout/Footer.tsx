@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
             </div>
             <div className="text-sm text-center">
               <p>Developed with ❤️ by</p>
-              <p className="font-medium">ANKAMGARI SHESHANK</p>
+              <p className="font-medium">ANKAMGARI SHESHANK GOUD</p>
             </div>
           </motion.div>
           
@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
           >
             {/* GitHub Link */}
             <a 
-              href="https://github.com/your-github-username" // Replace with your GitHub URL
+              href="https://github.com/ankamgarisheshank" // Replace with your GitHub URL
               target="_blank"
               rel="noopener noreferrer"
               className="h-9 w-9 rounded-full bg-card hover:bg-primary/10 flex items-center justify-center transition-colors"

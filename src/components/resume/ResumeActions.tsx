@@ -29,12 +29,14 @@ const ResumeActions: React.FC = () => {
           document={<ResumePDF data={resumeData} template={selectedTemplate} />}
           fileName={getPdfFilename()}
         >
-          {({ loading }: { loading?: boolean }) => (
-            <button className="btn btn-primary py-2 px-4 gap-2 flex items-center">
-              <Download className="h-4 w-4" />
-              <span>{loading ? 'Generating...' : 'Download PDF'}</span>
-            </button>
-          )}
+          {function ({ loading, url }: { loading: boolean; url?: string; }) {
+            return (
+              <button className="btn btn-primary py-2 px-4 gap-2 flex items-center" disabled={loading}>
+                <Download className="h-4 w-4" />
+                <span>{loading ? 'Generating...' : 'Download PDF'}</span>
+              </button>
+            );
+          }}
         </PDFDownloadLink>
       </div>
 
